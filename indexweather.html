@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weather_application</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="App.css">
+</head>
+<body>
+    <div class="card  mt-3 shadow m-auto">
+        <div class="back m-auto">
+            <div class="first-layer">
+                <div class="back-layer m-auto"></div>
+            <form action="" class="d-flex mt-2">
+                <i class=" send fa fa-send-o p-1" style="font-size:24px" onclick="fetchText()"></i>
+                <input class="form-control me-2" type="search" name="" id="country" placeholder="Country">
+                <i class=" send fa fa-search" style="font-size:24px"></i>
+            </form>
+            </div>
+            <div class="days">
+                <div class="show card shadow mt-3 m-auto " id="icon">
+                     <!-- <img src="./image/sun-img.jpg" alt="" style="width: 300px;">  -->
+                </div>
+                <div class=" show1 card shadow mt-2 m-auto" id="place">Unable to fecth location</div>
+                <div class=" show1 card shadow mt-2 m-auto" id="tempc"><span id="tempf">Error</span>Error</div>
+                <div class=" show1 card shadow mt-2 m-auto" id="des">No information is available</div>
+                <div class=" show1 card shadow mt-2 m-auto" id="sunrise">No informatiom is available</div>
+                <div class=" show1 card shadow mt-2 m-auto" id="sunset">No information is available</div>
+                <!-- <div class=" show1 card shadow mt-2 m-auto">Friday</div>
+                <div class=" show1 card shadow mt-2 m-auto">Saturday</div>
+                <div class=" show1 card shadow mt-2 m-auto">Sunday</div> -->
+            </div>
+            
+
+        </div>
+          <!-- <div class="">
+                <i class="fa fa-send-o" style="font-size:24px"></i>
+                <input class="inp" type="text">
+                <i class="fa fa-search" style="font-size:24px"></i>
+            </div>  -->
+        
+
+    </div>
+    
+</body>
+</html>
+<script src="App.js"></script>
+<!-- https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/oyo%20state?unitGroup=metric&key=C4N54GE4K5JCAC6A22TMYZQ7Y&contentType=json -->
